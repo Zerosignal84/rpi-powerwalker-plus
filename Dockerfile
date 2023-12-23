@@ -16,7 +16,7 @@ RUN apt update && apt install -y apt-utils curl unzip procps libusb-1.0-0 usbuti
 RUN ln -s /opt/pmasterp/data/pmasterpd /etc/init.d/pmasterpd 
 
 # Download PowerMaster from powerwalker.com
-RUN curl -s https://powerwalker.com/wp-content/uploads/2022/01/pmp105_linux64.zip --output pmp105_linux64.zip 
+RUN curl -s https://www.powermonitor.software/pmp/pmp122_linux64.zip --output pmp105_linux64.zip 
 
 # Add files from repository
 COPY response.varfile .
